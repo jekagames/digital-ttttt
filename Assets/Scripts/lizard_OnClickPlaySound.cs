@@ -11,13 +11,13 @@ public class lizard_OnClickPlaySound : MonoBehaviour {
 		lizardClips.Add ((AudioClip)Resources.Load ("Sounds/lizard-01"));
 		lizardClips.Add ((AudioClip)Resources.Load ("Sounds/lizard-02"));
 		lizardClips.Add ((AudioClip)Resources.Load ("Sounds/lizard-03"));
-		lizardClips.Add ((AudioClip)Resources.Load ("ounds/lizard-04"));
+		lizardClips.Add ((AudioClip)Resources.Load ("Sounds/lizard-04"));
 		lizardClips.Add ((AudioClip)Resources.Load ("Sounds/lizard-05"));
 		lizardClips.Add ((AudioClip)Resources.Load ("Sounds/lizard-06"));
 		lizardClips.Add ((AudioClip)Resources.Load ("Sounds/lizard-07"));
 		lizardClips.Add ((AudioClip)Resources.Load ("Sounds/lizard-08"));
 		lizardClips.Add ((AudioClip)Resources.Load ("Sounds/lizard-09"));
-		Debug.Log("Did the Audio load?");
+		Debug.Log("Lizard audio loaded");
 	}
 
 		void OnMouseDown ()
