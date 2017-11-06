@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: 05d2a9a09b3987a4d8630bd448c9f5dc
+timeCreated: 1509997020
+licenseType: Free
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Bohem Press
+  fontNames:
+  - Bohem Press
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

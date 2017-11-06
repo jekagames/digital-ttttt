@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: b56352e00f68e9f4b835f808f0924b14
+timeCreated: 1509997020
+licenseType: Free
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Intrique Script Personal Use
+  fontNames:
+  - Intrique Script Personal Use
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
