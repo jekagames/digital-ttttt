@@ -4,4 +4,10 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/ttttt-titlescreen.unity
+    guid: 4cd1d6d38f74617479e217a15148ff96
+  - enabled: 1
+    path: Assets/ttttt-main.unity
+    guid: b10a8875613478547b17960decfc2749

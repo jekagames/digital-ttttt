@@ -5,10 +5,11 @@ using UnityEngine.SceneManagement;
 
 public class changeScene : MonoBehaviour {
 
-	// Update is called once per frame
-	void sceneChange () {
-		if (Input.GetKey(KeyCode.UpArrow))
-			Debug.Log ("A key or mousepress was detected");
+	void Update(){
+		if (Input.GetKeyDown(KeyCode.Space))
+		{
+			Debug.Log ("You pressed Spacebar");	
 		SceneManager.LoadScene("ttttt-main", LoadSceneMode.Single);
+		}
 	}
 }
