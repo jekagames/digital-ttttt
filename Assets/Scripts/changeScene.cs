@@ -6,9 +6,9 @@ using UnityEngine.SceneManagement;
 public class changeScene : MonoBehaviour {
 
 	void Update(){
-		if (Input.GetKeyDown(KeyCode.Space))
+		if (Input.anyKey)
 		{
-			Debug.Log ("You pressed Spacebar");	
+			Debug.Log ("You pressed a key");	
 		SceneManager.LoadScene("ttttt-main", LoadSceneMode.Single);
 		}
 	}
