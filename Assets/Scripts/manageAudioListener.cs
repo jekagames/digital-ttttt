@@ -16,6 +16,9 @@ public class manageAudioListener : MonoBehaviour
 
 		myAudioListener = GetComponent<AudioListener>();
 		Debug.Log ("I got the AudioListener");
+
+		disableListener ();
+		Debug.Log ("Initial volume change");
 	}
 
 	void Update(){
@@ -27,18 +30,18 @@ public class manageAudioListener : MonoBehaviour
 		void disableListener ()
 	{
 		//if (Input.GetKeyDown (KeyCode.A)) {
-			Debug.Log ("Hello I am trying to work on disabling");
-			myAudioListener.enabled = false;
-			Debug.Log ("Listener Disabled");
+			Debug.Log ("I am trying to turn the volume down");
+		AudioListener.volume = 0.0F;
+			Debug.Log ("volume turned down");
 		//}
 	}
 		
 	void enableListener ()
 	{
 		//if (Input.GetKeyDown (KeyCode.S)) {
-			Debug.Log ("Hello I am trying to work on enabling");
-			myAudioListener.enabled = true;
-			Debug.Log ("Listener Enabled");
+			Debug.Log ("I am trying to turn the volume down");
+		AudioListener.volume = 1.0F;
+			Debug.Log ("volume turned up");
 		//}
 		
 	}
