@@ -1706,6 +1706,65 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 358936768}
   m_Mesh: {fileID: 4300020, guid: 0e06341564e33194c91a41ac7523439b, type: 3}
+--- !u!1 &361892711
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 361892713}
+  - component: {fileID: 361892712}
+  - component: {fileID: 361892714}
+  m_Layer: 0
+  m_Name: PersonaManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &361892712
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 361892711}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2142f9d08f1dcfe44b241c97f16d3fd7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maingame: {fileID: 2144172635}
+  myPersonaName: 
+  myPersonaTitle: 
+  myPersonaPosCharacter: 
+  myPersonaNegCharacter: 
+  personaText: {fileID: 2052071497}
+--- !u!4 &361892713
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 361892711}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &361892714
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 361892711}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d52f067e7a9daa46906c9f9ce570f37, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myPersonaName: 
 --- !u!1 &397758862
 GameObject:
   m_ObjectHideFlags: 0
@@ -5406,12 +5465,12 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1464146748}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 438, y: 270, z: 0}
+  m_LocalPosition: {x: 433, y: 290, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 2052071496}
   - {fileID: 1493017406}
   - {fileID: 1520771248}
+  - {fileID: 2052071496}
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -5595,7 +5654,7 @@ RectTransform:
   m_Children:
   - {fileID: 450294871}
   m_Father: {fileID: 1464146752}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -5781,7 +5840,7 @@ RectTransform:
   m_Children:
   - {fileID: 1907332932}
   m_Father: {fileID: 1464146752}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -6173,7 +6232,7 @@ GameObject:
   - component: {fileID: 1625376089}
   - component: {fileID: 1625376088}
   m_Layer: 0
-  m_Name: End-of-Game Text
+  m_Name: EndofGameText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6217,7 +6276,7 @@ MonoBehaviour:
   showLineNumbers: 0
   hideCommands: []
   luaEnvironment: {fileID: 0}
-  luaBindingName: flowchart
+  luaBindingName: endofgame
 --- !u!114 &1625376088
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -7685,7 +7744,7 @@ GameObject:
   - component: {fileID: 2052071498}
   - component: {fileID: 2052071497}
   m_Layer: 5
-  m_Name: Text
+  m_Name: Persona Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7697,12 +7756,12 @@ RectTransform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2052071495}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 255, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 275, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1464146752}
-  m_RootOrder: 0
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
@@ -7741,7 +7800,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: '[TROUBLESHOOTER ON DUTY: (TROUBLESHOOTERNAMEVARIABLE)]'
+  m_Text: PERSONA TEXT
 --- !u!222 &2052071498
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -8006,9 +8065,14 @@ GameObject:
   - component: {fileID: 2144172708}
   - component: {fileID: 2144172709}
   - component: {fileID: 2144172710}
+  - component: {fileID: 2144172714}
+  - component: {fileID: 2144172713}
+  - component: {fileID: 2144172712}
+  - component: {fileID: 2144172711}
+  - component: {fileID: 2144172715}
   - component: {fileID: 2144172658}
   m_Layer: 0
-  m_Name: Main Game Text
+  m_Name: MainGameText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8027,20 +8091,25 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 13.876278, y: 4.0103106}
+  scrollPos: {x: 19.83153, y: 9.801044}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 400
-  zoom: 0.97
+  zoom: 0.94000006
   scrollViewRect:
     serializedVersion: 2
     x: -343
     y: -340
     width: 1114
     height: 859
-  selectedBlocks: []
+  selectedBlocks:
+  - {fileID: 2144172645}
   selectedCommands: []
-  variables: []
+  variables:
+  - {fileID: 2144172714}
+  - {fileID: 2144172713}
+  - {fileID: 2144172712}
+  - {fileID: 2144172711}
   description: 
   stepPause: 0
   colorCommands: 1
@@ -8050,7 +8119,7 @@ MonoBehaviour:
   showLineNumbers: 0
   hideCommands: []
   luaEnvironment: {fileID: 0}
-  luaBindingName: flowchart
+  luaBindingName: maingame
 --- !u!114 &2144172636
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -8297,19 +8366,20 @@ MonoBehaviour:
     serializedVersion: 2
     x: 240.22687
     y: 30.96907
-    width: 182.98969
+    width: 184.04254
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
   itemId: 9
   blockName: troubleshooterpersona
   description: 
-  eventHandler: {fileID: 0}
+  eventHandler: {fileID: 2144172658}
   commandList:
   - {fileID: 2144172682}
   - {fileID: 2144172681}
   - {fileID: 2144172680}
   - {fileID: 2144172709}
+  - {fileID: 2144172715}
   - {fileID: 2144172679}
   - {fileID: 2144172677}
 --- !u!114 &2144172646
@@ -8326,7 +8396,7 @@ MonoBehaviour:
   nodeRect:
     serializedVersion: 2
     x: -15.711337
-    y: 28.030928
+    y: 26.967098
     width: 120
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -8334,7 +8404,7 @@ MonoBehaviour:
   itemId: 10
   blockName: story
   description: 
-  eventHandler: {fileID: 2144172658}
+  eventHandler: {fileID: 0}
   commandList:
   - {fileID: 2144172638}
   - {fileID: 2144172657}
@@ -8631,7 +8701,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2f6487d21a03404cb21b245f0242e79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  parentBlock: {fileID: 2144172646}
+  parentBlock: {fileID: 2144172645}
   waitForFrames: 1
 --- !u!114 &2144172659
 MonoBehaviour:
@@ -8699,7 +8769,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 602.00006
     y: 38.06186
-    width: 174.74226
+    width: 176.59573
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -9012,7 +9082,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 584.06195
     y: 170.21655
-    width: 124.2268
+    width: 124.46808
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -9062,7 +9132,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 160.35045
     y: 87.74221
-    width: 140.72165
+    width: 142.55319
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -9100,7 +9170,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -6.515642
     y: 88.99983
-    width: 166.49484
+    width: 169.14893
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -9154,7 +9224,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 434.5672
     y: 34
-    width: 147.93814
+    width: 145.74467
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -9210,7 +9280,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 26
   indentLevel: 0
-  storyText: 'Your name is: [NAMEVARIABLE] the [TITLEVARIABLE]. '
+  storyText: 'Your name is: {$myPersonaName} the {$myPersonaTitle}. '
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -9955,8 +10025,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 75
   indentLevel: 0
-  storyText: 'Your [STRENGTHVARIABLE] is excellent, though your [WEAKNESSVARIABLE]
-    could use some work. '
+  storyText: 'Your {$myPersonaNegCharacter} is excellent... '
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -9988,3 +10057,84 @@ MonoBehaviour:
     stringVal: 
   startIndex: 0
   callMode: 0
+--- !u!114 &2144172711
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2144172634}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4580f28dd8581476b810b38eea2f1316, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scope: 1
+  key: myPersonaNegCharacter
+  value: 000
+--- !u!114 &2144172712
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2144172634}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4580f28dd8581476b810b38eea2f1316, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scope: 1
+  key: myPersonaPosCharacter
+  value: 000
+--- !u!114 &2144172713
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2144172634}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4580f28dd8581476b810b38eea2f1316, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scope: 1
+  key: myPersonaTitle
+  value: 000
+--- !u!114 &2144172714
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2144172634}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4580f28dd8581476b810b38eea2f1316, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scope: 1
+  key: myPersonaName
+  value: 000
+--- !u!114 &2144172715
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2144172634}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 77
+  indentLevel: 0
+  storyText: '... though your {$myPersonaNegCharacter} could use some work. '
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  setSayDialog: {fileID: 0}
