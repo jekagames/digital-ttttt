@@ -5451,7 +5451,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61dddfdc5e0e44ca298d8f46f7f5a915, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectedFlowchart: {fileID: 1935813328}
+  selectedFlowchart: {fileID: 2144172635}
 --- !u!4 &934593944
 Transform:
   m_ObjectHideFlags: 1
@@ -6553,11 +6553,12 @@ GameObject:
   - component: {fileID: 1158971677}
   - component: {fileID: 1158971678}
   - component: {fileID: 1158971687}
-  - component: {fileID: 1158971727}
   - component: {fileID: 1158971726}
   - component: {fileID: 1158971717}
   - component: {fileID: 1158971705}
   - component: {fileID: 1158971688}
+  - component: {fileID: 1158971737}
+  - component: {fileID: 1158971727}
   m_Layer: 0
   m_Name: SeparatedInstructions
   m_TagString: Untagged
@@ -6592,7 +6593,7 @@ MonoBehaviour:
   selectedBlocks:
   - {fileID: 1158971687}
   selectedCommands:
-  - {fileID: 1158971717}
+  - {fileID: 1158971737}
   variables: []
   description: 
   stepPause: 0
@@ -6956,6 +6957,7 @@ MonoBehaviour:
   description: 
   eventHandler: {fileID: 0}
   commandList:
+  - {fileID: 1158971737}
   - {fileID: 1158971727}
   - {fileID: 1158971726}
   - {fileID: 1158971717}
@@ -7973,7 +7975,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 841589fc622bc494aa5405f416fa1301, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 110
+  itemId: 119
   indentLevel: 0
   text: Troubleshooter Persona
   description: 
@@ -8199,6 +8201,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1158971737
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1158971671}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17a200dbd67304446a3019434503338a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 117
+  indentLevel: 0
+  targetObject: {fileID: 1556060868}
+  methodName: disableSound
+  delay: 0
 --- !u!1 &1215287202
 GameObject:
   m_ObjectHideFlags: 0
@@ -10164,6 +10182,46 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1539241077}
   m_Mesh: {fileID: 4300004, guid: 0e06341564e33194c91a41ac7523439b, type: 3}
+--- !u!1 &1556060868
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1556060870}
+  - component: {fileID: 1556060869}
+  m_Layer: 0
+  m_Name: volumeManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1556060869
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1556060868}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4afa5cc33e6fdb84a96cc90e91ff0af4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &1556060870
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1556060868}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 471.5, y: 50, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 16
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1585703297
 GameObject:
   m_ObjectHideFlags: 0
@@ -11740,7 +11798,8 @@ GameObject:
   - component: {fileID: 1935813352}
   - component: {fileID: 1935813353}
   - component: {fileID: 1935813332}
-  - component: {fileID: 1935813341}
+  - component: {fileID: 1935813355}
+  - component: {fileID: 1935813354}
   m_Layer: 0
   m_Name: PauseMenu
   m_TagString: Untagged
@@ -11809,8 +11868,9 @@ MonoBehaviour:
   itemId: 0
   blockName: Menu
   description: 
-  eventHandler: {fileID: 1935813341}
+  eventHandler: {fileID: 0}
   commandList:
+  - {fileID: 1935813355}
   - {fileID: 1935813338}
   - {fileID: 1935813335}
   - {fileID: 1935813333}
@@ -11994,8 +12054,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 7
   indentLevel: 0
-  targetObject: {fileID: 0}
-  methodName: 
+  targetObject: {fileID: 1975887221}
+  methodName: quitGame
   delay: 0
 --- !u!114 &1935813338
 MonoBehaviour:
@@ -12056,22 +12116,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 5
   indentLevel: 0
-  targetObject: {fileID: 0}
-  methodName: 
+  targetObject: {fileID: 1975887221}
+  methodName: returnToMainMenu
   delay: 0
---- !u!114 &1935813341
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1935813327}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 10eaeba5e91be479e95d4fa48679f549, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  parentBlock: {fileID: 1935813329}
-  targetButton: {fileID: 1520771249}
 --- !u!4 &1935813342
 Transform:
   m_ObjectHideFlags: 0
@@ -12330,6 +12377,7 @@ MonoBehaviour:
   description: 
   eventHandler: {fileID: 0}
   commandList:
+  - {fileID: 1935813354}
   - {fileID: 1935813353}
 --- !u!114 &1935813353
 MonoBehaviour:
@@ -12344,6 +12392,38 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 22
   indentLevel: 0
+--- !u!114 &1935813354
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1935813327}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17a200dbd67304446a3019434503338a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 119
+  indentLevel: 0
+  targetObject: {fileID: 1556060868}
+  methodName: enableSound
+  delay: 0
+--- !u!114 &1935813355
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1935813327}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17a200dbd67304446a3019434503338a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 118
+  indentLevel: 0
+  targetObject: {fileID: 1556060868}
+  methodName: disableSound
+  delay: 0
 --- !u!1 &1958490487
 GameObject:
   m_ObjectHideFlags: 0
@@ -13364,6 +13444,9 @@ GameObject:
   - component: {fileID: 2144172718}
   - component: {fileID: 2144172717}
   - component: {fileID: 2144172673}
+  - component: {fileID: 2144172721}
+  - component: {fileID: 2144172719}
+  - component: {fileID: 2144172722}
   m_Layer: 0
   m_Name: MainGameText
   m_TagString: Untagged
@@ -13396,14 +13479,8 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 2144172675}
-  - {fileID: 2144172661}
-  - {fileID: 2144172665}
-  - {fileID: 2144172678}
-  - {fileID: 2144172645}
-  - {fileID: 2144172676}
-  selectedCommands:
-  - {fileID: 2144172716}
+  - {fileID: 2144172646}
+  selectedCommands: []
   variables:
   - {fileID: 2144172714}
   - {fileID: 2144172713}
@@ -13705,8 +13782,9 @@ MonoBehaviour:
   itemId: 10
   blockName: story
   description: 
-  eventHandler: {fileID: 0}
+  eventHandler: {fileID: 2144172722}
   commandList:
+  - {fileID: 2144172721}
   - {fileID: 2144172638}
   - {fileID: 2144172657}
   - {fileID: 2144172656}
@@ -14461,6 +14539,7 @@ MonoBehaviour:
   - {fileID: 2144172700}
   - {fileID: 2144172699}
   - {fileID: 2144172698}
+  - {fileID: 2144172719}
   - {fileID: 2144172716}
 --- !u!114 &2144172676
 MonoBehaviour:
@@ -15491,6 +15570,22 @@ MonoBehaviour:
   scope: 1
   key: myPrompt2
   value: 000
+--- !u!114 &2144172719
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2144172634}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17a200dbd67304446a3019434503338a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 119
+  indentLevel: 0
+  targetObject: {fileID: 1556060868}
+  methodName: enableSound
+  delay: 0
 --- !u!114 &2144172720
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -15505,3 +15600,32 @@ MonoBehaviour:
   scope: 1
   key: myPrompt1
   value: 000
+--- !u!114 &2144172721
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2144172634}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17a200dbd67304446a3019434503338a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 118
+  indentLevel: 0
+  targetObject: {fileID: 1556060868}
+  methodName: disableSound
+  delay: 0
+--- !u!114 &2144172722
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2144172634}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2f6487d21a03404cb21b245f0242e79, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parentBlock: {fileID: 2144172646}
+  waitForFrames: 1

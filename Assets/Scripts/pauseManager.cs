@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using Fungus;
 
@@ -24,5 +25,15 @@ public class pauseManager : MonoBehaviour {
 
 				}
 
+	void returnToMainMenu()
+	{
+		Debug.Log ("You pressed the mainscreen button");	
+		SceneManager.LoadScene("ttttt-titlescreen", LoadSceneMode.Single);
+	}
 
+	void quitGame()
+	{
+		//Make the game Quit.
+		Application.Quit();
+	}
 }
