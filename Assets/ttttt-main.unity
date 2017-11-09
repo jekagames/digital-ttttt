@@ -10486,7 +10486,6 @@ GameObject:
   - component: {fileID: 1625376093}
   - component: {fileID: 1625376092}
   - component: {fileID: 1625376091}
-  - component: {fileID: 1625376090}
   - component: {fileID: 1625376089}
   - component: {fileID: 1625376088}
   - component: {fileID: 1625376100}
@@ -10529,7 +10528,8 @@ MonoBehaviour:
     height: 859
   selectedBlocks:
   - {fileID: 1625376093}
-  selectedCommands: []
+  selectedCommands:
+  - {fileID: 1625376089}
   variables: []
   description: 
   stepPause: 0
@@ -10593,32 +10593,6 @@ MonoBehaviour:
   waitForClick: 1
   stopVoiceover: 1
   setSayDialog: {fileID: 0}
---- !u!114 &1625376090
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1625376086}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 2
-  indentLevel: 0
-  storyText: "The CUSTOMER may now express whether or not they are satisfied with
-    the proposed solution. \n"
-  description: 
-  character: {fileID: 0}
-  portrait: {fileID: 0}
-  voiceOverClip: {fileID: 0}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  stopVoiceover: 1
-  setSayDialog: {fileID: 0}
 --- !u!114 &1625376091
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -10632,8 +10606,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 1
   indentLevel: 0
-  storyText: If both the TROUBLESHOOTER and the CUSTOMER have finished talking over
-    the problem for now...
+  storyText: "If both the TROUBLESHOOTER and the CUSTOMER have finished talking over
+    the problem for now, the CUSTOMER may now express whether or not they are satisfied
+    with the proposed solution. \n"
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -10684,7 +10659,6 @@ MonoBehaviour:
   eventHandler: {fileID: 1625376092}
   commandList:
   - {fileID: 1625376091}
-  - {fileID: 1625376090}
   - {fileID: 1625376089}
   - {fileID: 1625376088}
   - {fileID: 1625376100}
@@ -13729,7 +13703,6 @@ GameObject:
   - component: {fileID: 2144172671}
   - component: {fileID: 2144172670}
   - component: {fileID: 2144172669}
-  - component: {fileID: 2144172668}
   - component: {fileID: 2144172660}
   - component: {fileID: 2144172664}
   - component: {fileID: 2144172663}
@@ -13811,8 +13784,7 @@ MonoBehaviour:
     y: -340
     width: 1114
     height: 859
-  selectedBlocks:
-  - {fileID: 2144172646}
+  selectedBlocks: []
   selectedCommands: []
   variables:
   - {fileID: 2144172714}
@@ -14647,32 +14619,6 @@ MonoBehaviour:
     booleanRef: {fileID: 0}
     booleanVal: 1
   setMenuDialog: {fileID: 0}
---- !u!114 &2144172668
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2144172634}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 40
-  indentLevel: 0
-  storyText: 'Encourage the CUSTOMER to take their time with the next few steps, and
-    not to feel rushed. '
-  description: 
-  character: {fileID: 0}
-  portrait: {fileID: 0}
-  voiceOverClip: {fileID: 0}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  stopVoiceover: 1
-  setSayDialog: {fileID: 0}
 --- !u!114 &2144172669
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -14713,7 +14659,8 @@ MonoBehaviour:
   itemId: 37
   indentLevel: 0
   storyText: 'TROUBLESHOOTER, ask the CUSTOMER to clear their mind and take a few
-    deep breaths. '
+    deep breaths. Encourage the CUSTOMER to take their time with the next few steps,
+    and not to feel rushed. '
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -14950,7 +14897,6 @@ MonoBehaviour:
   - {fileID: 2144172672}
   - {fileID: 2144172671}
   - {fileID: 2144172670}
-  - {fileID: 2144172668}
   - {fileID: 2144172669}
   - {fileID: 2144172658}
 --- !u!114 &2144172679
