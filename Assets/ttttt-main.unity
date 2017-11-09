@@ -5451,7 +5451,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61dddfdc5e0e44ca298d8f46f7f5a915, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectedFlowchart: {fileID: 2144172635}
+  selectedFlowchart: {fileID: 1625376087}
 --- !u!4 &934593944
 Transform:
   m_ObjectHideFlags: 1
@@ -10389,6 +10389,12 @@ GameObject:
   - component: {fileID: 1625376090}
   - component: {fileID: 1625376089}
   - component: {fileID: 1625376088}
+  - component: {fileID: 1625376100}
+  - component: {fileID: 1625376099}
+  - component: {fileID: 1625376098}
+  - component: {fileID: 1625376095}
+  - component: {fileID: 1625376097}
+  - component: {fileID: 1625376096}
   m_Layer: 0
   m_Name: EndofGameText
   m_TagString: Untagged
@@ -10409,7 +10415,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 0, y: 0}
+  scrollPos: {x: 0, y: 1}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 400
@@ -10421,7 +10427,7 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 1625376093}
+  - {fileID: 1625376095}
   selectedCommands: []
   variables: []
   description: 
@@ -10580,6 +10586,8 @@ MonoBehaviour:
   - {fileID: 1625376090}
   - {fileID: 1625376089}
   - {fileID: 1625376088}
+  - {fileID: 1625376100}
+  - {fileID: 1625376099}
 --- !u!4 &1625376094
 Transform:
   m_ObjectHideFlags: 0
@@ -10593,6 +10601,130 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1625376095
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1625376086}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodeRect:
+    serializedVersion: 2
+    x: 367
+    y: 159
+    width: 120
+    height: 40
+  tint: {r: 1, g: 1, b: 1, a: 1}
+  useCustomTint: 0
+  itemId: 8
+  blockName: Quit Game
+  description: 
+  eventHandler: {fileID: 0}
+  commandList:
+  - {fileID: 1625376096}
+--- !u!114 &1625376096
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1625376086}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17a200dbd67304446a3019434503338a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 10
+  indentLevel: 0
+  targetObject: {fileID: 1975887221}
+  methodName: quitGame
+  delay: 0
+--- !u!114 &1625376097
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1625376086}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17a200dbd67304446a3019434503338a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 9
+  indentLevel: 0
+  targetObject: {fileID: 1975887221}
+  methodName: returnToMainMenu
+  delay: 0
+--- !u!114 &1625376098
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1625376086}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodeRect:
+    serializedVersion: 2
+    x: 443
+    y: 89
+    width: 162
+    height: 40
+  tint: {r: 1, g: 1, b: 1, a: 1}
+  useCustomTint: 0
+  itemId: 7
+  blockName: Quit to Main Screen
+  description: 
+  eventHandler: {fileID: 0}
+  commandList:
+  - {fileID: 1625376097}
+--- !u!114 &1625376099
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1625376086}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 841589fc622bc494aa5405f416fa1301, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 6
+  indentLevel: 0
+  text: Quit Game?
+  description: 
+  targetBlock: {fileID: 1625376095}
+  hideIfVisited: 0
+  interactable:
+    booleanRef: {fileID: 0}
+    booleanVal: 1
+  setMenuDialog: {fileID: 0}
+--- !u!114 &1625376100
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1625376086}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 841589fc622bc494aa5405f416fa1301, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 5
+  indentLevel: 0
+  text: Return to Main Screen?
+  description: 
+  targetBlock: {fileID: 1625376098}
+  hideIfVisited: 0
+  interactable:
+    booleanRef: {fileID: 0}
+    booleanVal: 1
+  setMenuDialog: {fileID: 0}
 --- !u!1 &1668514723
 GameObject:
   m_ObjectHideFlags: 0
@@ -11832,8 +11964,9 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 1935813329}
-  selectedCommands: []
+  - {fileID: 1935813336}
+  selectedCommands:
+  - {fileID: 1935813337}
   variables: []
   description: 
   stepPause: 0
